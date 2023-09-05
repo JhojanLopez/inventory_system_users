@@ -25,7 +25,7 @@ docker run -p 8080:8080 --name <container_name> jhojanlopez/inventory_system_use
 
 2. Si eureka y la base de datos no estan en la misma red virutal agregar las varibles de entorno de acuerdo a su red:
 ```shell
-docker run -p 8080:8080 -e HOST_DB=<host_db> -e EUREKA_HOST=<eureka_host> --name <container_name> jhojanlopez/inventory_system_users
+docker run -p 8080:8080 -e HOST_DB=<host_db> -e HOST_EUREKA=<host_eureka> --name <container_name> jhojanlopez/inventory_system_users
 ```
 
 
