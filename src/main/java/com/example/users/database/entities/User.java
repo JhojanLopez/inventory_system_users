@@ -40,10 +40,6 @@ public class User {
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
-    @JoinColumn(name = "update_by", referencedColumnName = "id_user")
-    @ManyToOne
-    private User updateBy;
-
     @UpdateTimestamp
     @Column
     private LocalDateTime updatedAt;
